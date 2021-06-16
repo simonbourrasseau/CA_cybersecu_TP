@@ -1,8 +1,61 @@
 {% extends 'base.html.twig' %}
 
 
-{% block title %}LOGIN{% endblock %}
+{% block title %}Connexion Google{% endblock %}
 
 {% block body %}
+
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-md-5">
+            <div class="card mb-3" style="margin-top: 20%;">
+                <div class="card-body" style="padding: 2.5rem;">
+                    <div class="col text-center">
+                        <img height="30px" src="{{ asset('images/google.png') }}" alt="" class="mb-2">
+                        <h5 class="card-title" style="font-size: 20px;">Connexion</h5>
+                        <h6 class="card-subtitle mb-5">Utiliser votre compte Google</h6>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Adresse e-mail ou numéro de téléphone">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Saisissez votre mot de passe">
+                        </div>
+                        <div class="row" style="margin-top:3rem;">
+                            <div class="col-6 text-left">
+                                <a href="#">Mot de passe oublié ?</a>
+                            </div>
+                            <div class="col-6 text-right">
+                                <button type="submit" class="btn btn-primary">Suivant</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-right">
+                    <a class="googlelink" href="https://support.google.com/accounts?hl=fr">Aide</a>&nbsp;	&nbsp;	&nbsp;	&nbsp;
+                    <a class="googlelink" href="https://accounts.google.com/TOS?loc=FR&hl=fr&privacy=true">Confidentialité</a>&nbsp;	&nbsp;	&nbsp;	&nbsp;
+                    <a class="googlelink" href="https://accounts.google.com/TOS?loc=FR&hl=fr">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.googlelink{
+    color:rgba(0,0,0,0.6);
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.card-body{
+
+}
+</style>
 
 {% endblock %}

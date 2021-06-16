@@ -1,0 +1,14 @@
+controllers:
+    resource: ../../src/Controller/
+    type: annotation
+
+homepage:
+    path: /
+    controller: Symfony\bundle\FramworkBndle\Controller\RedirectController::urlRedirectAction
+    defaults:
+        path: null
+        permanent: true
+
+kernel:
+    resource: ../../src/Kernel.php
+    type: annotation

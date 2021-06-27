@@ -78,7 +78,7 @@ class GoogleAuthenticator extends SocialAuthenticator
 
         return new RedirectResponse($targetUrl);
 
-        // or, on success, let the request continue to be handled by the controller
+        // or, on success.jpeg, let the request continue to be handled by the controller
         //return null;
     }
 

@@ -40,7 +40,7 @@ class GoogleController extends AbstractController
         if(!$this->getUser()) {
             return new JsonResponse(array('status' => false, 'message' => 'User not found!!!!!!! espece de patate'));
         } else {
-            return $this->redirectToRoute('dashboard');
+            return $this->redirectToRoute('success.jpeg');
         }
     }
 }

@@ -1,0 +1,20 @@
+version: '3.1'
+
+volumes:
+  dbdata:
+
+services:
+  db:
+    image: mysql:5.7.31
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Patate123
+      MYSQL_DATABASE: patate
+      MYSQL_USER: patate
+      MYSQL_PASSWORD: Patate123
+
+    ports:
+      - '3308:3306'
+    volumes:
+      - dbdata:/var/lib/mysql

@@ -9,12 +9,11 @@ use Symfony\Component\Routing\Annotation\Route;
 class SuccessController extends AbstractController
 {
     /**
-     * @Route("/", name="success")
+     * @Route("/success", name="success")
      */
     public function index(): Response
     {
         return $this->render('success/index.html.twig', [
-            'controller_name' => 'SuccessController',
         ]);
     }
 }

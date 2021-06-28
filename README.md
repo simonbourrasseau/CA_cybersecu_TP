@@ -70,6 +70,22 @@ symfony server:start
 
 Puis vous devrez vous rendre sur [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
+##
+
+https://symfony.com/doc/current/doctrine.html
+
+connecter une bdd dans de ```.env``` 
+```DATABASE_URL="mysql://userèname:password@ip:port/nom_bdd?serverVersion=5.7.31"```
+
+puis faite 
+``` $ doctrine database:create```
+puis 
+``` $ doctrine make:migrate```
+et
+``` $ doctrine migration:migrate```
+
+et vous avez une base de donéé exploitable
+
 ---
 
 ## Plan du site
